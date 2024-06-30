@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Forum', serif;
-    background: url('/images/bg.jpg') no-repeat center center fixed; /* Add your image path here */
+    background: url('../images/bg.jpg') no-repeat center center fixed; /* Add your image path here */
     background-size: cover;
     margin: 0;
     padding: 0;
