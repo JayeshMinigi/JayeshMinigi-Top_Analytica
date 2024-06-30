@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly Elections Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Assembly Elections Survey</h1>
+        </header>
+        <form id="surveyForm">
+            <div class="question">
+                <label for="profession">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="question">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="question">
+                <label for="village">Village</label>
+                <input type="text" id="village" name="village" required>
+            </div>
+            <div class="question">
+                <label for="caste">Caste</label>
+                <select id="castes" name="caste" required>
+                    <option value="" disabled selected>Select your Caste</option>
+                    <option value="Minority">Minority</option>
+                    <option value="NT">NT</option>
+                    <option value="OBC">OBC</option>
+                    <option value="Open">Open</option>
+                    <option value="ST">ST</option>
+                    <option value="VJ">VJ</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="education">Education Level</label>
+                <select id="education" name="education" required>
+                    <option value="" disabled selected>Select your Education Level</option>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="PG and above">PG and above</option>
+                </select>            
+            </div>
+            <div class="question">
+                <label for="profession">Profession</label>
+                <input type="text" id="profession" name="profession" required>
+            </div>
+            <div class="question">
+                <label>Voter Card Information</label>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="have_voter_id" name="voter_id_status" value="have_voter_id">
+                    <label for="have_voter_id">Already have a Voter ID card</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="no_voter_id" name="voter_id_status" value="no_voter_id">
+                    <label for="no_voter_id">Eligible but did not register for Voter ID card</label>
+                </div>
+            </div>
+            <div class="question">
+                <label for="evm_hacked">Do you think EVM may be hacked?</label>
+                <select id="evm_hacked" name="evm_hacked" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="no">Don't Know</option>
+
+                </select>
+            </div>
+            <div class="question">
+                <label for="central_schemes">Which schemes of the Central government did you take benefit from or like?</label>
+                <select id="central_schemes" name="central_scheme" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="PM Janadhan Yojana">PM Janadhan Yojana</option>
+                    <option value="PM Ujjawala Yojana">PM Ujjawala Yojana</option>
+                    <option value="PM Mudra Yojana">PM Mudra Yojana</option>
+                    <option value="PM Kisan Samman Nidhi">PM Kisan Samman Nidhi</option>
+                    <option value="Not get any benefit">Not get any benefit</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="voters_in_house">Number of voters in the house</label>
+                <input type="number" id="voters_in_house" name="voters_in_house" required>
+            </div>
+            <div class="question">
+                <label for="mp_visited">Has your MLA visited your region after election and done development work?</label>
+                <select id="mp_visited" name="mp_visited" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="no">Don't Know</option>
+
+                </select>
+            </div>
+            <div class="question">
+                <label for="next_pm">Who should be the next PM of India?</label>
+                <select id="next_pms" name="next_pm" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Narendra Modi">Narendra Modi</option>
+                    <option value="Yogi Adityanath">Yogi Adityanath</option>
+                    <option value="Sharad Pawar">Sharad Pawar</option>
+                    <option value="Nitin Gadkari">Nitin Gadkari</option>
+                    <option value="Rahul Gandhi">Rahul Gandhi</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="party_supported">Which party did you support in Assembly Elections 2019?</label>
+                <select id="party_supported" name="party_supported" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="">BJP</option>
+                    <option value="">Vanchit Bahujan Aghadi</option>
+                    <option value="">Congress</option>
+                    <option value="">NCP</option>
+                    <option value="">Shivsena</option>
+                    <option value="">Not Voted</option>
+                    <option value="">Not Disclosed</option>
+                </select>            
+            </div>
+            <div class="question">
+                <label for="mp_preference">Tell us another name you like as an MLA for representing you?</label>
+                <input type="text" id="mp_preference" name="mp_preference" required>
+            </div>
+            <div class="question">
+                <label for="state_schemes">Schemes of the state government you took benefit from or like</label>
+                <select id="state_schemes" name="state_scheme" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Maharashtra Namo Shetkari Maha Samman Nidhi Yojana">Maharashtra Namo Shetkari Maha Samman Nidhi Yojana</option>
+                    <option value="Mahatma Jyotirao Phule Jan Arogya Yojana">Mahatma Jyotirao Phule Jan Arogya Yojana</option>
+                    <option value="Maharashtra Modi Awas Gharkul Yojana">Maharashtra Modi Awas Gharkul Yojana</option>
+                    <option value="Maharashtra Ramai Awas Yojana">Maharashtra Ramai Awas Yojana</option>
+                    <option value="Not take any benefit">Not take any benefit</option>
+                </select>
+            <div class="question">
+                <label for="issues_bamnoli">Issues in your village</label>
+                <input type="text" id="issues_bamnoli" name="issues_bamnoli" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

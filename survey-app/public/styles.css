@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+body {
+    font-family: 'Forum', serif;
+    background: url('/images/bg.jpg') no-repeat center center fixed; /* Add your image path here */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+.question label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.question input,
+.question select {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.question input[type="checkbox"] {
+    width: auto;
+    max-width: none;
+    margin-right: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+.submit-btn {
+    background-color: rgb(66, 135, 245);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: rgb(45, 105, 205);
+}
+
+.results {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .question label, .question input, .question select, .submit-btn {
+        font-size: 16px;
+    }
+}
